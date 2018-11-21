@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>使用VS Code开发C++ | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="#1. 参考/转载vs code进行c/c++开发VSCode 的第一个C++程序（windows）[更新2018.10.28] #2. C++开发相关插件（扩展商店中直接搜索）  至少要装C/C++。 还可以安装Code Runner、C++ Intellisense和Include Autocomplete。  #3. 编译器由于VS Code及其各个C++插件都没有C++编译器，所以需要自己">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用VS Code开发C++">
+<meta property="og:url" content="http://yoursite.com/2018/11/21/使用VSCode开发C/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#1. 参考/转载vs code进行c/c++开发VSCode 的第一个C++程序（windows）[更新2018.10.28] #2. C++开发相关插件（扩展商店中直接搜索）  至少要装C/C++。 还可以安装Code Runner、C++ Intellisense和Include Autocomplete。  #3. 编译器由于VS Code及其各个C++插件都没有C++编译器，所以需要自己">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-21T14:50:13.537Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="使用VS Code开发C++">
+<meta name="twitter:description" content="#1. 参考/转载vs code进行c/c++开发VSCode 的第一个C++程序（windows）[更新2018.10.28] #2. C++开发相关插件（扩展商店中直接搜索）  至少要装C/C++。 还可以安装Code Runner、C++ Intellisense和Include Autocomplete。  #3. 编译器由于VS Code及其各个C++插件都没有C++编译器，所以需要自己">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-使用VSCode开发C" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-使用VSCode开发C" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/21/使用VSCode开发C/" class="article-date">
   <time datetime="2018-11-21T14:49:44.000Z" itemprop="datePublished">2018-11-21</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/21/使用VSCode开发C/">使用VS Code开发C++</a>
+    <h1 class="article-title" itemprop="name">
+      使用VS Code开发C++
     </h1>
   
 
@@ -120,152 +122,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-版本控制工具对比" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/21/版本控制工具对比/" class="article-date">
-  <time datetime="2018-11-21T14:24:46.419Z" itemprop="datePublished">2018-11-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <table>
-<thead>
-<tr>
-<th>方面</th>
-<th>Perforce</th>
-<th>ClearCase</th>
-<th>SVN</th>
-<th>Git</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>一句话总结</td>
-<td>企业级版本化产品开发</td>
-<td>企业级版本化产品开发</td>
-<td>轻量级</td>
-<td>分布式</td>
-</tr>
-<tr>
-<td>简述</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>特色功能</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>可视化</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>平台</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>#1. Perforce（P4）</p>
-<ul>
-<li>优点<ul>
-<li>基于Changelist管理一次性对多个文件的提交，可以方便得查看哪些文件是一起提交的</li>
-<li>未Checkout的文件是只读状态（虽然可以手动改），IDE插件可以自动Checkout</li>
-<li>可以通过全部checkout再全部revert unchanged files来避免提交checkout但未改变内容的文件，不利于以后的问题排查</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>checkout、submit等操作都需要随时联网</li>
-<li>没有ignore功能？</li>
-</ul>
-</li>
-</ul>
-<p>#2. ClearCase</p>
-<ul>
-<li>优点<ul>
-<li>可集成BeyondCompare等工具</li>
-<li>未Checkout的文件是只读状态（虽然可以先让它是Hijacked状态，后面再处理），IDE插件可以自动Checkout</li>
-<li>可以方便的以图形化的方式查看单个文件或文件夹的Version History</li>
-<li>View的功能比较强大，可以组合不同VOB、不同分支</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>查看历史时，无法方便得查看哪些文件是一起提交的</li>
-<li>不能像Perforce那样revert unchanged files，也就不能避免提交checkout但未改变内容的文件，不利于以后的问题排查</li>
-<li>checkout、commit等操作都需要随时联网</li>
-<li>没有ignore功能</li>
-<li>没有递归把一个文件夹下的文件都add to control的功能，要用命令，而且权限不够</li>
-</ul>
-</li>
-</ul>
-<p>#3. SVN</p>
-<ul>
-<li>优点<ul>
-<li>安装、入门使用简单迅速</li>
-<li>show history既可以方便得查看哪些文件是一起提交的（即基于提交来查看），也可以查看单个文件的提交历史</li>
-<li>不需要checkout，也就是本地修改不需要联网</li>
-<li>有ignore功能</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>commit需要联网，相对于Perforce和ClearCase而言本地修改比较省事。</li>
-<li>互联网开发（没有特定版本一起release features，有可能好多人在同时开发，测试、合并、上线进度都不同）时，比较麻烦，如果有多步测试分支，每个人总要跳出自己这次的feature所修改的文件、代码来进行一步步合并，容易出错。</li>
-</ul>
-</li>
-</ul>
-<p>#4. Git</p>
-<ul>
-<li>优点<ul>
-<li>分布式（只是有一个中央服务器用来交换代码，作为出版本的标准）<ul>
-<li>除了push等操作都不需要联网，相互之间影响小。</li>
-<li>而且相当于自己有一个clone下来的库，有独自的一套分支、提交历史等，管理比较独立，commit和push也分开了</li>
-<li>每个人都有完整的库，安全性高</li>
-</ul>
-</li>
-<li>使用TortoiseGit可以方便得进行操作，包括show history、cherry-pick等。</li>
-<li>cherry-pick可以挑选部分commit进行提交</li>
-<li>pull-request利于code review，结合cherry-pick后不像其他工具需要分别查看多次提交所含的多个文件，而且到主仓库上后也比较明晰。</li>
-<li>rebase</li>
-<li>和Perforce、ClearCase、SVN相比，更适合于互联网开发（没有特定版本一起release features，有可能好多人在同时开发，测试、合并、上线进度都不同）</li>
-<li>有ignore功能</li>
-</ul>
-</li>
-<li>缺点<pre><code>* 概念、使用较复杂，尤其命令行
-</code></pre></li>
-</ul>
+  
+    <a href="/2018/11/21/版本控制工具对比/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/21/版本控制工具对比/" data-id="cjoradygb0001bgnhz6aqo43b" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
