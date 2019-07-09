@@ -62,6 +62,88 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Frontend/handover_experience" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/09/Frontend/handover_experience/" class="article-date">
+  <time datetime="2019-07-09T13:53:50.078Z" itemprop="datePublished">2019-07-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>用的什么语言、框架、IDE（有时可以从隐藏文件、项目文件名或扩展名看出来，比如.idea就可能是用的webstorm）</li>
+<li>入口文件在哪、路由规则在哪定义的、页面及其脚本文件的目录结构是怎么组织的</li>
+<li>怎么本地运行，怎么本地和后端接口联调（比如怎么配置请求的后端地址；或者也可能是用WebStorm的OPA Test功能先启动Mock Server然后再选择页面，那么就不需要单独配或者修改请求的后端地址了）</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/07/09/Frontend/handover_experience/" data-id="cjxvvlu5q0003hsnhmcwkgu80" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Frontend/Nodejs" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/09/Frontend/Nodejs/" class="article-date">
+  <time datetime="2019-07-09T13:53:01.988Z" itemprop="datePublished">2019-07-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>环境<ul>
+<li>先装Node.js。版本应该无所谓，中文网下个最新的就行了，好像目前是10.15.0，下x64的。</li>
+<li>IDE用VS Cdoe。随便下个Windows x64装上行了。</li>
+</ul>
+</li>
+<li>入门<ul>
+<li>打开项目目录后，打开一个Terminal，切换到项目目录，执行npm install，然后执行以npm start运行。</li>
+<li>这个start其实是定义在package.json中的封装好的自定义的命令</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;amp-ui&quot;,</span><br><span class="line">  &quot;version&quot;: &quot;0.0.0&quot;,</span><br><span class="line">  &quot;license&quot;: &quot;MIT&quot;,</span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;ng&quot;: &quot;ng&quot;,</span><br><span class="line">    &quot;start&quot;: &quot;ng serve --proxy-config proxy.conf.json&quot;,</span><br><span class="line">    &quot;build&quot;: &quot;ng build --prod&quot;,</span><br><span class="line">    &quot;test&quot;: &quot;ng test --sourcemaps=false&quot;,</span><br><span class="line">    &quot;lint&quot;: &quot;ng lint&quot;,</span><br><span class="line">    &quot;e2e&quot;: &quot;ng e2e&quot;,</span><br><span class="line">    &quot;ci&quot;: &quot;ng build --prod &amp;&amp; ng test --browsers ChromeHeadlessCI --single-run --code-coverage&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;private&quot;: true,</span><br><span class="line">  &quot;dependencies&quot;: &#123;</span><br><span class="line">    &quot;@angular/common&quot;: &quot;5.2.6&quot;,</span><br><span class="line">    &quot;@angular/compiler&quot;: &quot;5.2.6&quot;,</span><br><span class="line">    &quot;@angular/core&quot;: &quot;5.2.6&quot;,</span><br><span class="line">    &quot;@angular/forms&quot;: &quot;5.2.6&quot;,</span><br><span class="line">    &quot;@angular/http&quot;: &quot;^6.0.7&quot;,</span><br><span class="line">    &quot;@angular/platform-browser&quot;: &quot;5.2.6&quot;,</span><br><span class="line">    &quot;@angular/platform-browser-dynamic&quot;: &quot;5.2.6&quot;,</span><br><span class="line">    &quot;@angular/router&quot;: &quot;5.2.6&quot;,</span><br><span class="line">    &quot;@ng-bootstrap/ng-bootstrap&quot;: &quot;1.0.0&quot;,</span><br><span class="line">    &quot;@ng-select/ng-select&quot;: &quot;^1.5.2&quot;,</span><br><span class="line">    &quot;@ngx-translate/core&quot;: &quot;^9.1.1&quot;,</span><br><span class="line">    &quot;@ngx-translate/http-loader&quot;: &quot;^2.0.1&quot;,</span><br><span class="line">    &quot;@swimlane/ngx-datatable&quot;: &quot;11.2.0&quot;,</span><br><span class="line">    &quot;@types/jquery&quot;: &quot;^3.3.4&quot;,</span><br><span class="line">    &quot;@types/jqueryui&quot;: &quot;^1.12.2&quot;,</span><br><span class="line">    &quot;angular-highcharts&quot;: &quot;^5.2.13&quot;,</span><br><span class="line">    &quot;bootstrap&quot;: &quot;4.0.0&quot;,</span><br><span class="line">    &quot;core-js&quot;: &quot;2.5.3&quot;,</span><br><span class="line">    &quot;event-source-polyfill&quot;: &quot;0.0.12&quot;,</span><br><span class="line">    &quot;express&quot;: &quot;^4.16.3&quot;,</span><br><span class="line">    &quot;fullcalendar&quot;: &quot;3.6.1&quot;,</span><br><span class="line">    &quot;highcharts&quot;: &quot;^6.1.0&quot;,</span><br><span class="line">    &quot;html2canvas&quot;: &quot;^1.0.0-alpha.12&quot;,</span><br><span class="line">    &quot;jsnlog&quot;: &quot;2.26.1&quot;,</span><br><span class="line">    &quot;moment&quot;: &quot;2.22.0&quot;,</span><br><span class="line">    &quot;moment-timezone&quot;: &quot;0.5.17&quot;,</span><br><span class="line">    &quot;ng-fullcalendar&quot;: &quot;1.6.1&quot;,</span><br><span class="line">    &quot;ngx-cookie-service&quot;: &quot;1.0.10&quot;,</span><br><span class="line">    &quot;path&quot;: &quot;^0.12.7&quot;,</span><br><span class="line">    &quot;rxjs&quot;: &quot;5.5.6&quot;,</span><br><span class="line">    &quot;sinint-application-core-spa&quot;: &quot;./si5_core/sinint-application-core-spa-3.1.0-dev001.tgz&quot;,</span><br><span class="line">    &quot;zone.js&quot;: &quot;0.8.20&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;devDependencies&quot;: &#123;</span><br><span class="line">    &quot;@angular/cli&quot;: &quot;~1.7.4&quot;,</span><br><span class="line">    &quot;@angular/compiler-cli&quot;: &quot;^5.2.0&quot;,</span><br><span class="line">    &quot;@angular/language-service&quot;: &quot;^5.2.0&quot;,</span><br><span class="line">    &quot;@types/highcharts&quot;: &quot;^5.0.34&quot;,</span><br><span class="line">    &quot;@types/jasmine&quot;: &quot;~2.8.3&quot;,</span><br><span class="line">    &quot;@types/jasminewd2&quot;: &quot;~2.0.2&quot;,</span><br><span class="line">    &quot;@types/moment&quot;: &quot;^2.13.0&quot;,</span><br><span class="line">    &quot;@types/moment-timezone&quot;: &quot;^0.5.6&quot;,</span><br><span class="line">    &quot;@types/node&quot;: &quot;~6.0.60&quot;,</span><br><span class="line">    &quot;codelyzer&quot;: &quot;^4.0.1&quot;,</span><br><span class="line">    &quot;jasmine-core&quot;: &quot;~2.8.0&quot;,</span><br><span class="line">    &quot;jasmine-spec-reporter&quot;: &quot;~4.2.1&quot;,</span><br><span class="line">    &quot;jqueryui&quot;: &quot;^1.11.1&quot;,</span><br><span class="line">    &quot;karma&quot;: &quot;~2.0.0&quot;,</span><br><span class="line">    &quot;karma-chrome-launcher&quot;: &quot;~2.2.0&quot;,</span><br><span class="line">    &quot;karma-coverage-istanbul-reporter&quot;: &quot;^1.2.1&quot;,</span><br><span class="line">    &quot;karma-jasmine&quot;: &quot;~1.1.0&quot;,</span><br><span class="line">    &quot;karma-jasmine-html-reporter&quot;: &quot;^0.2.2&quot;,</span><br><span class="line">    &quot;protractor&quot;: &quot;^5.4.0&quot;,</span><br><span class="line">    &quot;ts-node&quot;: &quot;~4.1.0&quot;,</span><br><span class="line">    &quot;tslint&quot;: &quot;~5.9.1&quot;,</span><br><span class="line">    &quot;typescript&quot;: &quot;~2.5.3&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;engines&quot;: &#123;</span><br><span class="line">    &quot;node&quot;: &quot;^8.11.4&quot;,</span><br><span class="line">    &quot;npm&quot;: &quot;5.6.0&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>* 封装的命令中可能会用到代理，proxy.conf.json配置文件如下，会根据定义重定向请求：
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;/uiservice/*&quot;: &#123;</span><br><span class="line">    &quot;target&quot;: &quot;http://localhost:4300&quot;,</span><br><span class="line">    &quot;secure&quot;: false</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;/api/im/v3/Users/me&quot;: &#123;</span><br><span class="line">    &quot;target&quot;: &quot;http://localhost:4300&quot;,</span><br><span class="line">    &quot;secure&quot;: false</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;/shiftcalendar/*&quot;: &#123;</span><br><span class="line">    &quot;target&quot;: &quot;http://localhost:4300&quot;,</span><br><span class="line">    &quot;secure&quot;: false</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;/oee/*&quot;: &#123;</span><br><span class="line">    &quot;target&quot;: &quot;http://localhost:4300&quot;,</span><br><span class="line">    &quot;secure&quot;: false</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>* 根目录的app.js中，可以自定义接口（相当于node.js写的接口，跑在服务端）
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">app.get(&apos;/mdsp-osbar&apos;, (req, res) =&gt; &#123;</span><br><span class="line">  console.log(&apos;mdsp_osbar_url:&apos;, process.env.mdsp_osbar_url);</span><br><span class="line">  if (process.env.mdsp_osbar_url) &#123;</span><br><span class="line">    res.redirect(process.env.mdsp_osbar_url);</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">    res.redirect(&quot;https://static.eu1-b.mindsphere.io/osbar/v4/js/main.min.js&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<pre><code>* node.js中可以读取环境变量，如上例中的process.env.mdsp_osbar_url
+    * 除了可以读取运行环境（如Cloud Foundry或操作系统）的环境变量，还可以读取node.js自身的环境变量
+    * node.js自身的环境变量分为全局级、用户级、terminal级
+        * [官方文档](http://nodejs.cn/api/process.html#process_process_env)
+        * [Node.js中环境变量process.env的一些事详解](https://www.jb51.net/article/126838.htm?&amp;_=1523688296390)
+        * 可以使用命令npm config list、npm config set来查看、设置node.js的环境变量
+        * 貌似也可以在配置文件中写？
+* 用VS Code进行Debug的话，需要调整一下默认生成的launch.json
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/07/09/Frontend/Nodejs/" data-id="cjxvvlu5j0002hsnhmgdimmj5" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-使用VSCode开发C" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/21/使用VSCode开发C/" class="article-date">
@@ -114,7 +196,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/21/使用VSCode开发C/" data-id="cjoradyft0000bgnhro51yzk0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/21/使用VSCode开发C/" data-id="cjxvvlu570001hsnh76ukxlty" class="article-share-link">Share</a>
       
       
     </footer>
@@ -255,7 +337,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/21/版本控制工具对比/" data-id="cjoradygb0001bgnhz6aqo43b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/21/版本控制工具对比/" data-id="cjxvvlu4o0000hsnhcqzfmtoe" class="article-share-link">Share</a>
       
       
     </footer>
@@ -283,7 +365,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li></ul>
     </div>
   </div>
 
@@ -294,6 +376,14 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/07/09/Frontend/handover_experience/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/09/Frontend/Nodejs/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2018/11/21/使用VSCode开发C/">使用VS Code开发C++</a>
@@ -315,7 +405,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2018 John Doe<br>
+      &copy; 2019 John Doe<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
